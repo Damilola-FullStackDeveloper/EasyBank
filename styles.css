@@ -1,0 +1,244 @@
+
+/* Prevent scrolling by hiding overflow */
+body {
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 10;
+
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.navbar-links a {
+    color: gray;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.request-invite-1 {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: hsl(136, 65%, 51%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+  /* Responsive Navbar */
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+  .hero-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-div-1 {
+    max-width: 600px;
+    margin-left: auto;  /* This will push it to the right */
+    margin-right: 0;    /* Ensure no right margin is applied */
+    padding-left: 150px; /* Optional: add some padding to shift content more to the right */
+}
+
+.hero-div-2 {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-div svg{
+    width: 80%;
+    height: 80%;
+    top: 0px;
+   
+}
+
+/* Mockup image styling */
+.hero-div-2 img {
+    position: absolute;
+    top: 200px; /* Moves the image downward */
+    left: 75%; /* Moves the image further to the right */
+    transform: translate(-50%, -20%);
+    width: 60%;
+    z-index: 2;
+}
+
+
+  .request-invite-2 {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: hsl(136, 65%, 51%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-generation {
+    margin-top: 0;
+    font-size: 2em;
+    color:  hsl(228, 45%, 44%);
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.paragraph-1{
+    color: hsl(233, 8%, 62%);
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* Responsive Design */
+
+/* Mobile view (up to 375px) */
+@media (max-width: 375px) {
+    .navbar {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        display: none; /* Hide links initially on mobile */
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle on mobile */
+    }
+
+    .hero-section {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .hero-div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-div-1 {
+        padding-left: 0;
+        max-width: 90%;
+    }
+
+    .hero-div-2 img {
+        width: 80%;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.grid-container{
+    display: flex;
+    font-size: 12px;
+    text-align: center;
+    color: hsl(233, 8%, 62%);
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 50px;
+    
+    
+}
+
+.easy-bank{
+    color: hsl(228, 45%, 44%);
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.paragraph-2{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: hsl(233, 8%, 62%);
+}
+.second-section{
+    margin-top: 30px;
+    padding: 120px;
+}
+
+ .header-2, .header-3, .header-4, .header-5{
+    color: hsl(228, 45%, 44%);
+}
+
+.another-grid-container{
+    display: flex;
+}
+
+
+/* Tablet and smaller desktops (up to 1024px) */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .hero-div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-div-1 {
+        padding-left: 0;
+        max-width: 80%;
+    }
+
+    .hero-div-2 img {
+        width: 70%;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Large desktop (1440px and above) */
+@media (min-width: 1440px) {
+    .hero-div-1 {
+        max-width: 600px;
+        padding-left: 150px;
+    }
+
+    .hero-div-2 img {
+        width: 60%;
+        top: 200px;
+        left: 75%;
+        transform: translate(-50%, -20%);
+    }
+}
