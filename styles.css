@@ -52,7 +52,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -30px;
+    margin-top: 30px;
     background-color: hsl(0, 0%, 98%);
 }
 
@@ -199,10 +199,112 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-.another-grid-container{
-    display: flex;
+.latest-articles{
+    padding-left: 110px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: hsl(228, 45%, 44%);
+
+}
+.article-author, .article-excerpt{
+    color: hsl(233, 8%, 62%);
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    font-style: normal;
 }
 
+.articles-header{
+   font-family: "Poppins", serif;
+   font-weight: 300;
+   color:  hsl(233, 26%, 24%);
+}
+
+.articles-header:hover{
+    color: hsl(136, 65%, 51%);
+}
+.another-grid-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px; /* Set a fixed width for each card to fit horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.article-card img {
+    width: 100%;
+    height: auto;
+}
+
+.article-content {
+    padding: 15px;
+    background-color: white;
+}
+
+
+
+.footer {
+    background-color: hsl(233, 26%, 24%);
+    margin-top: 30px;
+    padding: 20px 0;
+    color: #fff;
+
+  }
+
+  .footer-logos {
+    display: grid;
+    padding-left: 100px;
+}
+
+
+  .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 150px); /* Adjust the width as needed */
+    justify-content: center;
+    gap: 40px; /* Space between columns */
+    text-align: left;
+  }
+  
+   
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align links to the left in each column */
+    gap: 10px;
+  }
+
+  .column a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .column a:hover {
+    
+  }
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .another-grid-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .article-card {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
 
 /* Tablet and smaller desktops (up to 1024px) */
 @media (max-width: 1024px) {
@@ -242,3 +344,4 @@ body {
         transform: translate(-50%, -20%);
     }
 }
+
