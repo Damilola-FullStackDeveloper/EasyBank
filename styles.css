@@ -256,19 +256,62 @@ body {
 
 
 .footer {
+    align-items: flex-start;
+    flex-wrap: wrap;
     background-color: hsl(233, 26%, 24%);
-    margin-top: 30px;
+    margin-top: 100px;
     padding: 20px 0;
     color: #fff;
-
   }
 
-  .footer-logos {
+
+  .footer-logos{
+    position: relative;
+    top: 50px;
     display: grid;
-    padding-left: 100px;
+    gap: 10px;
+    align-items: center;
+    padding-left: 120px;
+  }
+
+ .footer-button{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    margin-top: -60px;
+ }
+
+
+ .request-invite:hover {
+    background: linear-gradient(90deg, #2ab6d9, #33d35e);
+  }
+
+ .request-button {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #33d35e, #2ab6d9);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+
+  .footer-spacer{
+    height: 50px;
+  }
+
+  .footer-logo-1,
+.footer-logo-2 {
+  display: flex;
+  align-items: center; /* Aligns items inside individual sections */
 }
 
-
+.footer-logo-1 a,
+.footer-logo-2 a {
+  display: inline-block;
+  margin-right: 10px; /* Adjusts spacing between logos */
+}
   .footer-columns {
     display: grid;
     grid-template-columns: repeat(2, 150px); /* Adjust the width as needed */
@@ -278,6 +321,7 @@ body {
   }
   
    
+
   .column {
     display: flex;
     flex-direction: column;
